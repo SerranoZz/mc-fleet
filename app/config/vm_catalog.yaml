@@ -1,0 +1,223 @@
+aws_common_instance_templates: &aws_common_instances
+  - name: m5ad.large
+    vcpus: 2
+    ram: 8192
+  - name: t2.large
+    vcpus: 2
+    ram: 8192
+  - name: m5a.large
+    vcpus: 2
+    ram: 8192
+  - name: m5zn.large
+    vcpus: 2
+    ram: 8192
+  - name: m5d.large
+    vcpus: 2
+    ram: 8192
+  - name: r5n.large  
+    vcpus: 2  
+    ram: 16384
+  - name: r5ad.large  
+    vcpus: 2
+    ram: 16384
+  - name: r5d.large  
+    vcpus: 2  
+    ram: 16384
+  - name: r5b.large  
+    vcpus: 2   
+    ram: 16384
+  - name: r5.large  
+    vcpus: 2   
+    ram: 16384
+  - name: m6i.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m5d.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m6a.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m5ad.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m7i.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m5a.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: m5.24xlarge
+    vcpus: 96
+    ram: 393216
+  - name: r7i.24xlarge
+    vcpus: 96
+    ram: 786432
+  - name: r5d.24xlarge
+    vcpus: 96
+    ram: 786432
+  - name: r5.24xlarge
+    vcpus: 96
+    ram: 786432
+
+
+azure_common_instance_templates: &azure_common_instances_br
+  - name: D2ads v5
+    vcpus: 2
+    ram: 8192
+  - name: B2s v2
+    vcpus: 2
+    ram: 8192
+  - name: D2ads v6
+    vcpus: 2
+    ram: 8192
+  - name: D2ds v4
+    vcpus: 2
+    ram: 8192
+  - name: D2d v4
+    vcpus: 2
+    ram: 8192
+  - name: E2ds v4  
+    vcpus: 2
+    ram: 16384
+  - name: E2ads v6  
+    vcpus: 2
+    ram: 16384
+  - name: E2 v3  
+    vcpus: 2
+    ram: 16384
+  - name: E2bs v5  
+    vcpus: 2
+    ram: 16384
+  - name: E2bds v5  
+    vcpus: 2
+    ram: 16384
+  - name: D96s v6
+    vcpus: 96
+    ram: 393216
+  - name: D96s v5
+    vcpus: 96
+    ram: 393216
+  - name: D96as v5
+    vcpus: 96
+    ram: 393216
+  - name: D96ads v5
+    vcpus: 96
+    ram: 393216
+  - name: D96d v5
+    vcpus: 96
+    ram: 393216
+  - name: D96ads v6
+    vcpus: 96
+    ram: 393216
+  - name: D96ds v6
+    vcpus: 96
+    ram: 393216
+  - name: E96-24ds v6
+    vcpus: 96
+    ram: 786432
+  - name: E96-48s v6
+    vcpus: 96
+    ram: 786432
+  - name: E96-48ds v6
+    vcpus: 96
+    ram: 786432
+
+
+
+providers:
+  aws:
+    regions:
+      sa-east-1:
+        region_code: sa
+        instance_types: 
+          # - *aws_common_instances
+            - name: c5a.24xlarge
+              vcpus: 96
+            - name: c5ad.24xlarge
+              vcpus: 96
+            - name: c5d.24xlarge
+              vcpus: 96
+            - name: c6a.24xlarge
+              vcpus: 96
+            - name: c6id.24xlarge
+              vcpus: 96
+            - name: c6in.24xlarge
+              vcpus: 96
+            - name: m5.24xlarge
+              vcpus: 96
+            - name: m5a.24xlarge
+              vcpus: 96
+            - name: m5ad.24xlarge
+              vcpus: 96
+            - name: m5d.24xlarge
+              vcpus: 96
+            - name: m6a.24xlarge
+              vcpus: 96
+            - name: m6i.24xlarge
+              vcpus: 96
+            - name: m7i.24xlarge
+              vcpus: 96
+            - name: r5.24xlarge
+              vcpus: 96
+            - name: r5a.24xlarge
+              vcpus: 96
+            - name: r5ad.24xlarge
+              vcpus: 96
+            - name: r5b.24xlarge
+              vcpus: 96
+            - name: r5d.24xlarge
+              vcpus: 96
+            - name: r5n.24xlarge
+              vcpus: 96
+            - name: r6i.24xlarge
+              vcpus: 96
+            - name: r7i.24xlarge
+              vcpus: 96
+            - name: c6i.32xlarge
+              vcpus: 96
+            - name: c7i.48xlarge
+              vcpus: 96
+        
+        availability_zones:
+          sa-east-1a:
+            subnet
+          sa-east-1b:
+            subnet
+          sa-east-1c:
+            subnet
+
+
+      us-east-1:
+        region_code: us
+        instance_types:
+          - *aws_common_instances
+
+        availability_zones:
+          us-east-1a:
+            subnet
+          us-east-1b:
+            subnet
+          us-east-1c:
+            subnet
+          us-east-1d:
+            subnet
+          us-east-1e:
+            subnet
+          us-east-1f:
+            subnet
+
+
+  azure:
+    regions:
+      brazilsouth:
+        region_code: bs
+        instance_types:
+          - *azure_common_instances_br
+        
+        
+
+      eastus:
+        region_code: eus
+        instance_types:
+          - *azure_common_instances_br
