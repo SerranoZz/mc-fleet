@@ -46,7 +46,7 @@ class PricingClient:
         params = {'type': instance_type, 'region': region, 'market': 'spot', 'provider': provider}
         
         try:
-            response = self.session.get("http://midas.petrobras.com.br:9090/api/v2/get_price", params=params, timeout=15)
+            response = self.session.get("url", params=params, timeout=15) 
             response.raise_for_status() 
             
             data = response.json()

@@ -46,7 +46,7 @@ class AWSProvider(AbstractCloudProvider):
         return vms
     
 
-    def create_fleet(self, instances, allocation_strategy, target_capacity, tag='MultiCloud - FVBR'):
+    def create_fleet(self, instances, allocation_strategy, target_capacity, tag='MultiCloud'):
         
         region = instances[0].region
         session = boto3.Session(region_name=region)

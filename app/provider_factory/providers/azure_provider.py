@@ -58,7 +58,7 @@ class AzureProvider(AbstractCloudProvider):
         return vms
     
 
-    def create_fleet(self, instances, allocation_strategy, target_capacity, tag='MultiCloud - FVBR'):
+    def create_fleet(self, instances, allocation_strategy, target_capacity, tag='MultiCloud'):
         if allocation_strategy == 'lowest-price':
             allocation_strategy = 'LowestPrice'
         elif allocation_strategy == 'capacity-optimized':

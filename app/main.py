@@ -30,7 +30,7 @@ def main(args, catalog_config):
     }
 
     pricing_client = PricingClient()
-    catalog_service = CatalogService()
+    catalog_service = CatalogService(available_providers, pricing_client)
     fleet_service = FleetService(available_providers)
 
     instance_options = catalog_service.build_catalog_in_parallel(catalog_config, num_vcpus, location, 99999)
