@@ -1,0 +1,44 @@
+[
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 100,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 19.24,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "c7i.48xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 1.3205
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 1,
+                "summary": [
+                    {
+                        "instance_type": "c7i.48xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 1.3205
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    }
+]

@@ -1,0 +1,5 @@
+run_id,test_name,fleet_name,provisioning_time,instance_type,region_az,quantity,price,total_price,avg_price_test,allocated_instances
+1,Multi-Cloud-AWS-Azure-Lowest-Price-N200,AZURE-FVBR-FLEET-1,158.47,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+2,Multi-Cloud-AWS-Azure-Lowest-Price-N200,AZURE-FVBR-FLEET-1,129.0,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+3,Multi-Cloud-AWS-Azure-Lowest-Price-N200,AZURE-FVBR-FLEET-1,156.43,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+mean,Multi-Cloud-AWS-Azure-Lowest-Price-N200,,147.96666666666667,,,,,,0.028593999999999998,200

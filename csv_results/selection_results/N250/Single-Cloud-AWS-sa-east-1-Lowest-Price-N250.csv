@@ -1,0 +1,15 @@
+run_id,test_name,fleet_name,provisioning_time,instance_type,region_az,quantity,price,total_price,avg_price_test,allocated_instances
+1,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,101.88,t2.large,sa-east-1a,123,0.0391,4.8093,0.0585484,250
+1,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,101.88,r5.large,sa-east-1b,21,0.0731,1.5351,0.0585484,250
+1,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,101.88,m5ad.large,sa-east-1c,48,0.078,3.7439999999999998,0.0585484,250
+1,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,101.88,r5ad.large,sa-east-1c,57,0.0787,4.4859,0.0585484,250
+1,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,101.88,r5d.large,sa-east-1c,1,0.0628,0.0628,0.0585484,250
+2,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,97.65,t2.large,sa-east-1a,123,0.0392,4.8216,0.052306000000000005,250
+2,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,97.65,r5.large,sa-east-1b,60,0.0754,4.524,0.052306000000000005,250
+2,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,97.65,r5d.large,sa-east-1c,27,0.0647,1.7469,0.052306000000000005,250
+2,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,97.65,m5d.large,sa-east-1c,40,0.0496,1.984,0.052306000000000005,250
+3,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,81.99,t2.large,sa-east-1a,123,0.0405,4.9815000000000005,0.0525316,250
+3,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,81.99,r5.large,sa-east-1b,44,0.0757,3.3308,0.0525316,250
+3,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,81.99,r5d.large,sa-east-1c,36,0.0668,2.4048,0.0525316,250
+3,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,AWS-FVBR-FLEET-1,81.99,m5d.large,sa-east-1c,47,0.0514,2.4158,0.0525316,250
+mean,Single-Cloud-AWS-sa-east-1-Lowest-Price-N250,,94.45846153846153,,,,,,0.05477633846153847,250

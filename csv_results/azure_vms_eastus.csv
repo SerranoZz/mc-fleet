@@ -1,0 +1,108 @@
+VM_Size,vCPUs,Memory_MB,Architecture,Spot_Price_USD,Spot_SKU_Name
+Standard_D1,1,3584,x64,N/A,N/A
+Basic_A2,2,3584,x64,N/A,N/A
+Standard_B1ls,1,512,x64,N/A,N/A
+Standard_D2ads_v5,2,8192,x64,0.019189,Standard_D2ads_v5 Spot
+Standard_B2s,2,4096,x64,N/A,N/A
+Standard_B2ats_v2,2,1024,x64,0.00846,B2ats v2 Spot
+Basic_A0,1,768,x64,N/A,N/A
+Standard_D1_v2,1,3584,x64,N/A,N/A
+Standard_D2ads_v6,2,8192,x64,0.021238,D2ads v6 Spot
+Standard_D2alds_v6,2,4096,x64,0.017736,D2alds v6 Spot
+Standard_B2s_v2,2,8192,x64,0.07488,B2s v2 Spot
+Standard_B1ms,1,2048,x64,N/A,N/A
+Standard_A2m_v2,2,16384,x64,0.02455,A2m v2 Spot
+Standard_D11,2,14336,x64,N/A,N/A
+Standard_D2,2,7168,x64,N/A,N/A
+Standard_B2as_v2,2,8192,x64,0.06768,B2as v2 Spot
+Standard_A1,1,1792,x64,N/A,N/A
+Standard_D2as_v5,2,8192,x64,0.016022,Standard_D2as_v5 Spot
+Standard_D2lds_v5,2,4096,x64,0.024634,D2lds v5 Spot
+Standard_A0,1,768,x64,N/A,N/A
+Standard_B2ms,2,8192,x64,N/A,N/A
+Standard_A2,2,3584,x64,N/A,N/A
+Standard_B2als_v2,2,4096,x64,0.03384,B2als v2 Spot
+Standard_B2ls_v2,2,4096,x64,0.03744,B2ls v2 Spot
+Standard_D2as_v4,2,8192,x64,0.017885,D2as v4 Spot
+Standard_D2als_v6,2,4096,x64,0.014858,D2als v6 Spot
+Standard_D11_v2_Promo,2,14336,x64,N/A,N/A
+Standard_A2_v2,2,4096,x64,0.018629,A2 v2 Spot
+Standard_D2ds_v4,2,8192,x64,0.027595,D2ds v4 Spot
+Standard_D2d_v4,2,8192,x64,0.028996,D2d v4 Spot
+Standard_D2ds_v6,2,8192,x64,0.023288,D2ds v6 Spot
+Standard_D2lds_v6,2,4096,x64,0.020493,D2lds v6 Spot
+Standard_D2d_v5,2,8192,x64,0.028996,Standard_D2d_v5 Spot
+Standard_D2ls_v5,2,4096,x64,0.022151,D2ls v5 Spot
+Standard_D2s_v4,2,8192,x64,0.020784,D2s v4 Spot
+Standard_A5,2,14336,x64,N/A,N/A
+Standard_D2ls_v6,2,4096,x64,0.016637,D2ls v6 Spot
+Standard_D2ds_v5,2,8192,x64,0.028996,Standard_D2ds_v5 Spot
+Standard_D2s_v3,2,8192,x64,0.019805,D2s v3 Spot
+Standard_D2s_v5,2,8192,x64,0.025018,Standard_D2s_v5 Spot
+Standard_D11_v2,2,14336,x64,N/A,N/A
+Basic_A1,1,1792,x64,N/A,N/A
+Standard_D2_v2,2,7168,x64,N/A,N/A
+Standard_D2s_v6,2,8192,x64,0.018816,D2s v6 Spot
+Standard_D2a_v4,2,8192,x64,0.017885,D2a v4 Spot
+Standard_D2_v3,2,8192,x64,0.019805,D2 v3 Spot
+Standard_DC1s_v2,1,4096,x64,N/A,N/A
+Standard_DC2s_v2,2,8192,x64,N/A,N/A
+Standard_DC2as_v5,2,8192,x64,0.0317,Standard_DC2as_v5 Spot
+Standard_DC2ds_v3,2,16384,x64,0.041765,standard_DC2ds_v3 Spot
+Standard_DC2s_v3,2,16384,x64,0.035482,standard_DC2s_v3 Spot
+Standard_DS11-1_v2,2,14336,x64,N/A,N/A
+Standard_DS11_v2,2,14336,x64,N/A,N/A
+Standard_DS2,2,7168,x64,N/A,N/A
+Standard_DS1,1,3584,x64,N/A,N/A
+Standard_DS2_v2,2,7168,x64,N/A,N/A
+Standard_DS11,2,14336,x64,N/A,N/A
+Standard_DS1_v2,1,3584,x64,N/A,N/A
+Standard_DC2ads_v5,2,8192,x64,0.037966,Standard_DC2ads_v5 Spot
+Standard_B2ts_v2,2,1024,x64,0.00936,B2ts v2 Spot
+Standard_A1_v2,1,2048,x64,0.008871,A1 v2 Spot
+Standard_E2ads_v6,2,16384,x64,0.026796,E2ads v6 Spot
+Standard_E2ds_v4,2,16384,x64,0.034344,E2ds v4 Spot
+Standard_EC2ads_v5,2,16384,x64,0.048287,Standard_EC2ads_v5 Spot
+Standard_E2_v3,2,16384,x64,0.025994,E2 v3 Spot
+Standard_D2_v2_Promo,2,7168,x64,N/A,N/A
+Standard_D2as_v6,2,8192,x64,0.01678,D2as v6 Spot
+Standard_E2as_v5,2,16384,x64,0.021052,E2as v5 Spot
+Standard_D2_v4,2,8192,x64,0.021821,D2 v4 Spot
+Standard_E2as_v4,2,16384,x64,0.023474,E2as v4 Spot
+Standard_E2as_v6,2,16384,x64,0.021991,E2as v6 Spot
+Standard_D2_v5,2,8192,x64,0.025018,Standard_D2_v5 Spot
+Standard_DS11_v2_Promo,2,14336,x64,N/A,N/A
+Standard_E2a_v4,2,16384,x64,0.023474,E2a v4 Spot
+Standard_B1s,1,1024,x64,N/A,N/A
+Standard_E2bs_v5,2,16384,x64,0.037429,Standard_E2bs_v5 Spot
+Standard_DC1s_v3,1,8192,x64,0.017741,standard_DC1s_v3 Spot
+Standard_E2bds_v5,2,16384,x64,0.03983,Standard_E2bds_v5 Spot
+Standard_DC1ds_v3,1,8192,x64,0.020882,standard_DC1ds_v3 Spot
+Standard_DS2_v2_Promo,2,7168,x64,N/A,N/A
+Standard_E2s_v6,2,16384,x64,0.024592,E2s v6 Spot
+Standard_E2s_v5,2,16384,x64,0.031651,E2s v5 Spot
+Standard_E2ds_v6,2,16384,x64,0.030307,E2ds v6 Spot
+Standard_E2ds_v5,2,16384,x64,0.034344,E2ds v5 Spot
+Standard_E2_v4,2,16384,x64,0.031664,E2 v4 Spot
+Standard_E2s_v3,2,16384,x64,0.025994,E2s v3 Spot
+Standard_F2als_v6,2,4096,x64,0.022361,F2als v6 Spot
+Standard_E2s_v4,2,16384,x64,0.031664,E2s v4 Spot
+Standard_E2d_v4,2,16384,x64,0.034344,E2d v4 Spot
+Standard_E2_v5,2,16384,x64,0.031651,Standard_E2_v5 Spot
+Standard_E2ads_v5,2,16384,x64,0.024405,E2ads v5 Spot
+Standard_EC2as_v5,2,16384,x64,0.041652,Standard_EC2as_v5 Spot
+Standard_F1,1,2048,x64,0.010253,F1 Spot
+Standard_E2d_v5,2,16384,x64,0.034344,Standard_E2d_v5 Spot
+Standard_F1s,1,2048,x64,0.010253,F1s Spot
+Standard_F2,2,4096,x64,0.020424,F2 Spot
+Standard_F2ams_v6,2,16384,x64,0.033348,F2ams v6 Spot
+Standard_F2as_v6,2,8192,x64,0.025523,F2as v6 Spot
+Standard_F2s,2,4096,x64,0.020424,F2s Spot
+Standard_FX2mds_v2,2,43008,x64,0.051046,FX2mds v2 Spot
+Standard_L2as_v4,2,16384,x64,0.031786,L2as v4 Spot
+Standard_G1,2,28672,x64,0.08052,G1 Spot
+Standard_L2aos_v4,2,16384,x64,0.041765,L2aos v4 Spot
+Standard_L2s_v4,2,16384,x64,0.032155,L2s v4 Spot
+Standard_F2s_v2,2,4096,x64,0.02307,F2s v2 Spot
+Standard_FX2ms_v2,2,43008,x64,0.041172,FX2ms v2 Spot
+Standard_GS1,2,28672,x64,0.08052,GS1 Spot

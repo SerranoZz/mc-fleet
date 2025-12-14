@@ -1,0 +1,3201 @@
+[
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 20.61,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.6624
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.7372
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.9648
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 1.2879
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.1101
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 3.5857
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.647
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 3.8018
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.8643
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 5.287
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.7372
+                    },
+                    {
+                        "instance_type": "m5a.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.6624
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "capacity-optimized",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 23.43,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.6624
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.7372
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.9648
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 1.2879
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.1101
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 3.5857
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.647
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 3.8018
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.8643
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 5.287
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m6i.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 3.8643
+                    },
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 4,
+                        "price_per_instance": 0.7372
+                    },
+                    {
+                        "instance_type": "m7i.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 3,
+                        "price_per_instance": 3.5857
+                    },
+                    {
+                        "instance_type": "m5ad.24xlarge",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 1.2879
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Price-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Price-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "price-capacity-optimized",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 25.5,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.6624
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.7372
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.9648
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 1.2879
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.1101
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 3.5857
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.647
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 3.8018
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 3.8643
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 5.287
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 0.7372
+                    },
+                    {
+                        "instance_type": "m6i.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 3.8643
+                    },
+                    {
+                        "instance_type": "m7i.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 3.5857
+                    },
+                    {
+                        "instance_type": "m5a.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 0.6624
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N10",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 96.7,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D96as v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.147939
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.357171
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.372536
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.425178
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.522267
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96d v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.596672
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.761329
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.872209
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-24ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D96s_v6",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 10,
+                        "price_per_instance": 1.425178
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "capacity-optimized",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 65.38,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D96as v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.147939
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.357171
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.372536
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.425178
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.522267
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96d v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.596672
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.761329
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.872209
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-24ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D96s_v6",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 10,
+                        "price_per_instance": 1.425178
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Price-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Price-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "price-capacity-optimized",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 66.05,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D96as v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.147939
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.357171
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.372536
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.425178
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.522267
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96d v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.596672
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D96ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.761329
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48s v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 1.872209
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-24ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E96-48ds v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 2.313881
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D96s_v6",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 10,
+                        "price_per_instance": 1.425178
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N100",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N100",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 100,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 84.26,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0391
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0489
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0517
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0628
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0731
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.074
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.078
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0786
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0787
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0917
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 100,
+                "summary": [
+                    {
+                        "instance_type": "t2.large",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 100,
+                        "price_per_instance": 0.0391
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N100",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N100",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 100,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 112.56,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.028594
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.031696
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2d v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.042134
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043058
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2 v3",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043428
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bs v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.044352
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bds v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.049342
+            },
+            {
+                "provider": "azure",
+                "instance_type": "B2s v2",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.1206
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 100,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 100,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N200",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N200",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 200,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 101.38,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0391
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0489
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0517
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0628
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0731
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.074
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.078
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0786
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0787
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0917
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 200,
+                "summary": [
+                    {
+                        "instance_type": "t2.large",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 123,
+                        "price_per_instance": 0.0391
+                    },
+                    {
+                        "instance_type": "r5.large",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 15,
+                        "price_per_instance": 0.0731
+                    },
+                    {
+                        "instance_type": "r5d.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.0628
+                    },
+                    {
+                        "instance_type": "r5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.0787
+                    },
+                    {
+                        "instance_type": "m5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 50,
+                        "price_per_instance": 0.078
+                    },
+                    {
+                        "instance_type": "m5d.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 0.0489
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N200",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N200",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 200,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 129.03,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.028594
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.031696
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2d v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.042134
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043058
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2 v3",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043428
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bs v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.044352
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bds v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.049342
+            },
+            {
+                "provider": "azure",
+                "instance_type": "B2s v2",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.1206
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 200,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 200,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N250",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N250",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 250,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 101.88,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0391
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0489
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0517
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0628
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0731
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.074
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.078
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0786
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0787
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0917
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 250,
+                "summary": [
+                    {
+                        "instance_type": "t2.large",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 123,
+                        "price_per_instance": 0.0391
+                    },
+                    {
+                        "instance_type": "r5.large",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 21,
+                        "price_per_instance": 0.0731
+                    },
+                    {
+                        "instance_type": "m5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 48,
+                        "price_per_instance": 0.078
+                    },
+                    {
+                        "instance_type": "r5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 57,
+                        "price_per_instance": 0.0787
+                    },
+                    {
+                        "instance_type": "r5d.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 0.0628
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N250",
+        "parameters": {
+            "name": "Single-Cloud-Azure-brazilsouth-Lowest-Price-N250",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "azure"
+            ],
+            "nodes": 250,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 172.61,
+        "pricing_catalog": [
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.028594
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.031696
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2d v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "D2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.033264
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ds v4",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.042134
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2ads v6",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043058
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2 v3",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.043428
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bs v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.044352
+            },
+            {
+                "provider": "azure",
+                "instance_type": "E2bds v5",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.049342
+            },
+            {
+                "provider": "azure",
+                "instance_type": "B2s v2",
+                "region": "brazilsouth",
+                "region_az": "brazilsouth",
+                "price": 0.1206
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 250,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 250,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+        {
+        "test_name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 23.89,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.3741
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.4659
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.5402
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.549
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.7049
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8805
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8928
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 2.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 2.2501
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 2.2859
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m6a.24xlarge",
+                        "region_az": "us-east-1c",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 1.4659
+                    },
+                    {
+                        "instance_type": "m6i.24xlarge",
+                        "region_az": "us-east-1a",
+                        "provider": "aws",
+                        "count": 8,
+                        "price_per_instance": 1.5402
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "capacity-optimized",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 22.27,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.3741
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.4659
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.5402
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.549
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.7049
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8805
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8928
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 2.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 2.2501
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 2.2859
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m7i.24xlarge",
+                        "region_az": "us-east-1a",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 1.7049
+                    },
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 1.549
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Price-Capacity-Optimized-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Price-Capacity-Optimized-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "price-capacity-optimized",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 20.71,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.3741
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6a.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 1.4659
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m6i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.5402
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.549
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1a",
+                "price": 1.7049
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8805
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 1.8928
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 2.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r7i.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 2.2501
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.24xlarge",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 2.2859
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 10,
+                        "price_per_instance": 1.549
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N100",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N100",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 100,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 25.99,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0318
+            },
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0337
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0444
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0458
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0463
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0468
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 0.0551
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0554
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0628
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 100,
+                "summary": [
+                    {
+                        "instance_type": "m5a.large",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 100,
+                        "price_per_instance": 0.0318
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N200",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N200",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 200,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 70.05,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0318
+            },
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0337
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0444
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0458
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0463
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0468
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 0.0551
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0554
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0628
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 200,
+                "summary": [
+                    {
+                        "instance_type": "m5a.large",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 170,
+                        "price_per_instance": 0.0318
+                    },
+                    {
+                        "instance_type": "m5d.large",
+                        "region_az": "us-east-1f",
+                        "provider": "aws",
+                        "count": 3,
+                        "price_per_instance": 0.0458
+                    },
+                    {
+                        "instance_type": "m5ad.large",
+                        "region_az": "us-east-1f",
+                        "provider": "aws",
+                        "count": 25,
+                        "price_per_instance": 0.0444
+                    },
+                    {
+                        "instance_type": "r5.large",
+                        "region_az": "us-east-1d",
+                        "provider": "aws",
+                        "count": 2,
+                        "price_per_instance": 0.0463
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N250",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N250",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 250,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 71.43,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0318
+            },
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0337
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0444
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0458
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0463
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0468
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 0.0551
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0554
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0559
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0628
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 250,
+                "summary": [
+                    {
+                        "instance_type": "m5a.large",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 241,
+                        "price_per_instance": 0.0318
+                    },
+                    {
+                        "instance_type": "m5ad.large",
+                        "region_az": "us-east-1f",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 0.0444
+                    },
+                    {
+                        "instance_type": "r5.large",
+                        "region_az": "us-east-1d",
+                        "provider": "aws",
+                        "count": 8,
+                        "price_per_instance": 0.0463
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+        {
+        "test_name": "Multi-Cloud-AWS-Azure-Lowest-Price-N10",
+        "parameters": {
+            "name": "Multi-Cloud-AWS-Azure-Lowest-Price-N10",
+            "enabled": true,
+            "type": "multi_cloud",
+            "providers": [
+                "aws",
+                "azure"
+            ],
+            "nodes": 10,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "both"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 18.91,
+        "pricing_catalog": [
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.24xlarge",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1b",
+                    "price": 0.6762
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5.24xlarge",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.7494
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "r5.24xlarge",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 0.9694
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D96as v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 1.147939
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5ad.24xlarge",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 1.2938
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D96s v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 1.357171
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D96ads v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 1.372536
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.24xlarge",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1c",
+                    "price": 1.3741
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D96s v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 1.425178
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m6a.24xlarge",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1c",
+                    "price": 1.4775
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D96ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 1.522267
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m6i.24xlarge",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 1.5332
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5.24xlarge",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 1.5412
+                }
+            ]
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 10,
+                "summary": [
+                    {
+                        "instance_type": "m5a.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 10,
+                        "price_per_instance": 0.6762
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Multi-Cloud-AWS-Azure-Lowest-Price-N100",
+        "parameters": {
+            "name": "Multi-Cloud-AWS-Azure-Lowest-Price-N100",
+            "enabled": true,
+            "type": "multi_cloud",
+            "providers": [
+                "aws",
+                "azure"
+            ],
+            "nodes": 100,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "both"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 111.59,
+        "pricing_catalog": [
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.028594
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.031696
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0318
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2d v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0337
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.039
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.042134
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043058
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2 v3",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043428
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bs v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.044352
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0444
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0458
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1d",
+                    "price": 0.0463
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0468
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 0.0489
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bds v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.049342
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.0517
+                }
+            ]
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 100,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 100,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Multi-Cloud-AWS-Azure-Lowest-Price-N200",
+        "parameters": {
+            "name": "Multi-Cloud-AWS-Azure-Lowest-Price-N200",
+            "enabled": true,
+            "type": "multi_cloud",
+            "providers": [
+                "aws",
+                "azure"
+            ],
+            "nodes": 200,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "both"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 158.47,
+        "pricing_catalog": [
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.028594
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.031696
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0318
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2d v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0337
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.039
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.042134
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043058
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2 v3",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043428
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bs v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.044352
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0444
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0458
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1d",
+                    "price": 0.0463
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0468
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 0.0489
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bds v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.049342
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.0518
+                }
+            ]
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 200,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 200,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Multi-Cloud-AWS-Azure-Lowest-Price-N250",
+        "parameters": {
+            "name": "Multi-Cloud-AWS-Azure-Lowest-Price-N250",
+            "enabled": true,
+            "type": "multi_cloud",
+            "providers": [
+                "aws",
+                "azure"
+            ],
+            "nodes": 250,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "both"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 165.49,
+        "pricing_catalog": [
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.028594
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.031696
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0318
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2d v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0337
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.039
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.042134
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043058
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2 v3",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043428
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bs v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.044352
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0444
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0458
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1d",
+                    "price": 0.0463
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0468
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 0.0489
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bds v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.049342
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.0518
+                }
+            ]
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 250,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 250,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N400",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N400",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 400,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 94.82,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0392
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0488
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0523
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0647
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0746
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0754
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.0782
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0783
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.0792
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.0934
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 368,
+                "summary": [
+                    {
+                        "instance_type": "t2.large",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 123,
+                        "price_per_instance": 0.0392
+                    },
+                    {
+                        "instance_type": "m5zn.large",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 39,
+                        "price_per_instance": 0.0934
+                    },
+                    {
+                        "instance_type": "r5.large",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 83,
+                        "price_per_instance": 0.0754
+                    },
+                    {
+                        "instance_type": "m5d.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 37,
+                        "price_per_instance": 0.0488
+                    },
+                    {
+                        "instance_type": "r5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.0792
+                    },
+                    {
+                        "instance_type": "m5ad.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 65,
+                        "price_per_instance": 0.0783
+                    },
+                    {
+                        "instance_type": "r5d.large",
+                        "region_az": "sa-east-1c",
+                        "provider": "aws",
+                        "count": 16,
+                        "price_per_instance": 0.0647
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N400",
+        "parameters": {
+            "name": "Single-Cloud-AWS-us-east-1-Lowest-Price-N400",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 400,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "us"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 76.71,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0314
+            },
+            {
+                "provider": "aws",
+                "instance_type": "t2.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0335
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0448
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0459
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0459
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0461
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1f",
+                "price": 0.0551
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5d.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1b",
+                "price": 0.0551
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5b.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1c",
+                "price": 0.0556
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5zn.large",
+                "region": "us-east-1",
+                "region_az": "us-east-1d",
+                "price": 0.0629
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 400,
+                "summary": [
+                    {
+                        "instance_type": "m5a.large",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 251,
+                        "price_per_instance": 0.0314
+                    },
+                    {
+                        "instance_type": "m5d.large",
+                        "region_az": "us-east-1f",
+                        "provider": "aws",
+                        "count": 149,
+                        "price_per_instance": 0.0459
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    },
+    {
+        "test_name": "Multi-Cloud-AWS-Azure-Lowest-Price-N400",
+        "parameters": {
+            "name": "Multi-Cloud-AWS-Azure-Lowest-Price-N400",
+            "enabled": true,
+            "type": "multi_cloud",
+            "providers": [
+                "aws",
+                "azure"
+            ],
+            "nodes": 400,
+            "vcpus": 2,
+            "strategy": "lowest-price",
+            "location": "both"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 200.3,
+        "pricing_catalog": [
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.028594
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0314
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.031696
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "D2d v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.033264
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1b",
+                    "price": 0.0335
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "t2.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.0392
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ds v4",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.042134
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2ads v6",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043058
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2 v3",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.043428
+                },
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bs v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.044352
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0448
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0459
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1d",
+                    "price": 0.0459
+                },
+                {
+                    "provider": "aws",
+                    "instance_type": "r5ad.large",
+                    "region": "us-east-1",
+                    "region_az": "us-east-1f",
+                    "price": 0.0461
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5d.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1c",
+                    "price": 0.0488
+                }
+            ],
+            [
+                {
+                    "provider": "azure",
+                    "instance_type": "E2bds v5",
+                    "region": "brazilsouth",
+                    "region_az": "brazilsouth",
+                    "price": 0.049342
+                }
+            ],
+            [
+                {
+                    "provider": "aws",
+                    "instance_type": "m5a.large",
+                    "region": "sa-east-1",
+                    "region_az": "sa-east-1a",
+                    "price": 0.0523
+                }
+            ]
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AZURE-FVBR-FLEET-1",
+                "total_vms": 251,
+                "summary": [
+                    {
+                        "instance_type": "Standard_D2ads_v5",
+                        "region_az": "brazilsouth-1",
+                        "provider": "azure",
+                        "count": 251,
+                        "price_per_instance": 0.028594
+                    }
+                ]
+            },
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 149,
+                "summary": [
+                    {
+                        "instance_type": "m5a.large",
+                        "region_az": "us-east-1b",
+                        "provider": "aws",
+                        "count": 149,
+                        "price_per_instance": 0.0314
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    }
+]

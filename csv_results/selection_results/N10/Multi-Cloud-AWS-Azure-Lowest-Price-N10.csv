@@ -1,0 +1,5 @@
+run_id,test_name,fleet_name,provisioning_time,instance_type,region_az,quantity,price,total_price,avg_price_test,allocated_instances
+1,Multi-Cloud-AWS-Azure-Lowest-Price-N10,AWS-FVBR-FLEET-1,18.91,m5a.24xlarge,sa-east-1b,10,0.6762,6.7620000000000005,0.6762,10
+2,Multi-Cloud-AWS-Azure-Lowest-Price-N10,AWS-FVBR-FLEET-1,18.87,m5a.24xlarge,sa-east-1b,10,0.6877,6.877,0.6877,10
+3,Multi-Cloud-AWS-Azure-Lowest-Price-N10,AWS-FVBR-FLEET-1,19.2,m5a.24xlarge,sa-east-1b,10,0.6928,6.928,0.6928,10
+mean,Multi-Cloud-AWS-Azure-Lowest-Price-N10,,18.993333333333336,,,,,,0.6855666666666668,10

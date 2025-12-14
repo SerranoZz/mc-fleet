@@ -1,0 +1,229 @@
+test_suite:
+  - name: "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10"
+    enabled: true
+    type: "single_cloud"
+    providers: ["aws"]
+    nodes: 100
+    vcpus: 96
+    strategy: "lowest-price"
+    location: "br" 
+  
+  # - name: "Single-Cloud-AWS-sa-east-1-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "capacity-optimized"
+  #   location: "br" 
+
+  # - name: "Single-Cloud-AWS-sa-east-1-Price-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "price-capacity-optimized"
+  #   location: "br" 
+
+  # - name: "Single-Cloud-Azure-brazilsouth-Lowest-Price-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "lowest-price"
+  #   location: "br"
+  
+  # - name: "Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "capacity-optimized"
+  #   location: "br"
+
+  # - name: "Single-Cloud-Azure-brazilsouth-Price-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "price-capacity-optimized"
+  #   location: "br"
+
+  # - name: "Single-Cloud-AWS-sa-east-1-Lowest-Price-N100"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 100
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br" 
+
+  # - name: "Single-Cloud-Azure-brazilsouth-Lowest-Price-N100"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 100
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br"
+
+  # - name: "Single-Cloud-AWS-sa-east-1-Lowest-Price-N200"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 200
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br" 
+
+  # - name: "Single-Cloud-Azure-brazilsouth-Lowest-Price-N200"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 200
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br"
+
+  # - name: "Single-Cloud-AWS-sa-east-1-Lowest-Price-N250"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 250
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br" 
+
+  # - name: "Single-Cloud-Azure-brazilsouth-Lowest-Price-N250"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["azure"]
+  #   nodes: 250
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br"
+
+  # - name: "Single-Cloud-AWS-sa-east-1-Lowest-Price-N400"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 400
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "br"
+
+
+  # #--- Testes AWS US-EAST-1 ---
+  # - name: "Single-Cloud-AWS-us-east-1-Lowest-Price-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "lowest-price"
+  #   location: "us"
+
+  # - name: "Single-Cloud-AWS-us-east-1-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "capacity-optimized"
+  #   location: "us" 
+  
+  # - name: "Single-Cloud-AWS-us-east-1-Price-Capacity-Optimized-N10"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "price-capacity-optimized"
+  #   location: "us" 
+
+  # - name: "Single-Cloud-AWS-us-east-1-Lowest-Price-N100"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 100
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "us" 
+
+  # - name: "Single-Cloud-AWS-us-east-1-Lowest-Price-N200"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 200
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "us" 
+
+  # - name: "Single-Cloud-AWS-us-east-1-Lowest-Price-N250"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 250
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "us" 
+
+  # - name: "Single-Cloud-AWS-us-east-1-Lowest-Price-N400"
+  #   enabled: true
+  #   type: "single_cloud"
+  #   providers: ["aws"]
+  #   nodes: 400
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "us" 
+
+
+  # #--- Testes Multi-Cloud ---
+  # - name: "Multi-Cloud-AWS-Azure-Lowest-Price-N10"
+  #   enabled: true
+  #   type: "multi_cloud"
+  #   providers: ["aws", "azure"]
+  #   nodes: 10
+  #   vcpus: 96
+  #   strategy: "lowest-price"
+  #   location: "both" 
+
+  # - name: "Multi-Cloud-AWS-Azure-Lowest-Price-N100"
+  #   enabled: true
+  #   type: "multi_cloud"
+  #   providers: ["aws", "azure"]
+  #   nodes: 100
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "both"
+  
+  # - name: "Multi-Cloud-AWS-Azure-Lowest-Price-N200"
+  #   enabled: true
+  #   type: "multi_cloud"
+  #   providers: ["aws", "azure"]
+  #   nodes: 200
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "both"
+  
+  # - name: "Multi-Cloud-AWS-Azure-Lowest-Price-N250"
+  #   enabled: true
+  #   type: "multi_cloud"
+  #   providers: ["aws", "azure"]
+  #   nodes: 250
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "both"
+
+  # - name: "Multi-Cloud-AWS-Azure-Lowest-Price-N400"
+  #   enabled: true
+  #   type: "multi_cloud"
+  #   providers: ["aws", "azure"]
+  #   nodes: 400
+  #   vcpus: 2
+  #   strategy: "lowest-price"
+  #   location: "both"

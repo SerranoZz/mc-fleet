@@ -1,0 +1,5 @@
+run_id,test_name,fleet_name,provisioning_time,instance_type,region_az,quantity,price,total_price,avg_price_test,allocated_instances
+1,Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10,AZURE-FVBR-FLEET-1,65.38,Standard_D96s_v6,brazilsouth-1,10,1.425178,14.25178,1.425178,10
+2,Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10,AZURE-FVBR-FLEET-1,96.47,Standard_D96s_v6,brazilsouth-1,10,1.425178,14.25178,1.425178,10
+3,Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10,AZURE-FVBR-FLEET-1,65.43,Standard_D96s_v6,brazilsouth-1,10,1.425178,14.25178,1.425178,10
+mean,Single-Cloud-Azure-brazilsouth-Capacity-Optimized-N10,,75.76,,,,,,1.425178,10

@@ -1,0 +1,24 @@
+[
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N10",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 100,
+            "vcpus": 0,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "COMPLETE_FAILURE",
+        "provisioning_time_seconds": 0,
+        "pricing_catalog": [],
+        "fleets": [],
+        "errors": [
+            "Nenhuma VM encontrada para os critérios especificados."
+        ]
+    }
+]

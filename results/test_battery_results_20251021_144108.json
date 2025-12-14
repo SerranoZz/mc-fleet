@@ -1,0 +1,142 @@
+[
+    {
+        "test_name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N100",
+        "parameters": {
+            "name": "Single-Cloud-AWS-sa-east-1-Lowest-Price-N100",
+            "enabled": true,
+            "type": "single_cloud",
+            "providers": [
+                "aws"
+            ],
+            "nodes": 100,
+            "vcpus": 96,
+            "strategy": "lowest-price",
+            "location": "br"
+        },
+        "status": "SUCCESS",
+        "provisioning_time_seconds": 43.53,
+        "pricing_catalog": [
+            {
+                "provider": "aws",
+                "instance_type": "m5a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.6624
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.7344
+            },
+            {
+                "provider": "aws",
+                "instance_type": "c6id.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 0.7574
+            },
+            {
+                "provider": "aws",
+                "instance_type": "c6in.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.8366
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5a.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 0.8688
+            },
+            {
+                "provider": "aws",
+                "instance_type": "m5ad.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.8762
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1c",
+                "price": 0.9648
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5ad.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 1.0172
+            },
+            {
+                "provider": "aws",
+                "instance_type": "r5n.24xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1b",
+                "price": 1.1328
+            },
+            {
+                "provider": "aws",
+                "instance_type": "c7i.48xlarge",
+                "region": "sa-east-1",
+                "region_az": "sa-east-1a",
+                "price": 1.3205
+            }
+        ],
+        "fleets": [
+            {
+                "fleet_id": "AWS-FVBR-FLEET-1",
+                "total_vms": 12,
+                "summary": [
+                    {
+                        "instance_type": "r5ad.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 3,
+                        "price_per_instance": 1.0172
+                    },
+                    {
+                        "instance_type": "c7i.48xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 1.3205
+                    },
+                    {
+                        "instance_type": "c5a.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 2.5959
+                    },
+                    {
+                        "instance_type": "c5ad.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 5.2025
+                    },
+                    {
+                        "instance_type": "m5a.24xlarge",
+                        "region_az": "sa-east-1b",
+                        "provider": "aws",
+                        "count": 5,
+                        "price_per_instance": 0.6624
+                    },
+                    {
+                        "instance_type": "m5.24xlarge",
+                        "region_az": "sa-east-1a",
+                        "provider": "aws",
+                        "count": 1,
+                        "price_per_instance": 0.7344
+                    }
+                ]
+            }
+        ],
+        "errors": []
+    }
+]

@@ -1,0 +1,5 @@
+run_id,test_name,fleet_name,provisioning_time,instance_type,region_az,quantity,price,total_price,avg_price_test,allocated_instances
+1,Single-Cloud-Azure-brazilsouth-Lowest-Price-N200,AZURE-FVBR-FLEET-1,129.03,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+2,Single-Cloud-Azure-brazilsouth-Lowest-Price-N200,AZURE-FVBR-FLEET-1,158.65,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+3,Single-Cloud-Azure-brazilsouth-Lowest-Price-N200,AZURE-FVBR-FLEET-1,158.35,Standard_D2ads_v5,brazilsouth-1,200,0.028594,5.7188,0.028593999999999998,200
+mean,Single-Cloud-Azure-brazilsouth-Lowest-Price-N200,,148.67666666666665,,,,,,0.028593999999999998,200

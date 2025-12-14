@@ -1,0 +1,16 @@
+AWS_Type,AWS_Family,AWS_vCPUs,AWS_Memory_MB,AWS_CPU,Azure_Equivalent_Type,Azure_Family,Azure_vCPUs,Azure_Memory_MB,Azure_CPU,Azure_Spot_Price,Azure_Spot_SKU_Name
+m6in.large,General Purpose,2,8192,Intel,Standard_D2s_v6,General Purpose,2,8192,Intel,0.018816,D2s v6 Spot
+m7a.large,General Purpose,2,8192,AMD,Standard_D2as_v4,General Purpose,2,8192,AMD,0.017885,D2as v4 Spot
+m5dn.large,General Purpose,2,8192,Intel,Standard_D2_v3,General Purpose,2,8192,Intel,0.019805,D2 v3 Spot
+m8i-flex.large,General Purpose,2,8192,Intel,Standard_D2_v4,General Purpose,2,8192,Intel,0.021821,D2 v4 Spot
+m5n.large,General Purpose,2,8192,Intel,Standard_D2_v5,General Purpose,2,8192,Intel,0.025018,Standard_D2_v5 Spot
+z1d.large,Memory Optimized,2,16384,Intel,Standard_E2ds_v6,Memory Optimized,2,16384,Intel,0.030307,E2ds v6 Spot
+r6idn.large,Memory Optimized,2,16384,Intel,Standard_E2ds_v5,Memory Optimized,2,16384,Intel,0.034344,E2ds v5 Spot
+r6a.large,Memory Optimized,2,16384,AMD,Standard_E2as_v5,Memory Optimized,2,16384,AMD,0.021052,E2as v5 Spot
+r8i-flex.large,Memory Optimized,2,16384,Intel,Standard_E2_v4,Memory Optimized,2,16384,Intel,0.031664,E2 v4 Spot
+r6in.large,Memory Optimized,2,16384,Intel,Standard_E2s_v3,Memory Optimized,2,16384,Intel,0.025994,E2s v3 Spot
+r5dn.large,Memory Optimized,2,16384,Intel,Standard_E2s_v4,Memory Optimized,2,16384,Intel,0.031664,E2s v4 Spot
+r7a.large,Memory Optimized,2,16384,AMD,Standard_E2as_v4,Memory Optimized,2,16384,AMD,0.023474,E2as v4 Spot
+r7iz.large,Memory Optimized,2,16384,Intel,Standard_E2d_v4,Memory Optimized,2,16384,Intel,0.034344,E2d v4 Spot
+r6id.large,Memory Optimized,2,16384,Intel,Standard_E2_v5,Memory Optimized,2,16384,Intel,0.031651,Standard_E2_v5 Spot
+r8i.large,Memory Optimized,2,16384,Intel,Standard_E2d_v5,Memory Optimized,2,16384,Intel,0.034344,Standard_E2d_v5 Spot
