@@ -8,7 +8,6 @@ OUTPUT_FILES = {
     "us-east-1": "./csv_results/aws_vms_us-east-1.csv"
 }
 
-# Função para consultar instâncias de uma região
 def get_instances(region):
     filters_json = json.dumps([
         {"Name": "vcpu-info.default-vcpus", "Values": ["2"]},
@@ -23,9 +22,8 @@ def get_instances(region):
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
     return json.loads(result.stdout)
 
-# Primeiro: sa-east-1
 instances_sa = get_instances("sa-east-1")
-sa_types = set()  # Para lembrar quais tipos existem em sa-east-1
+sa_types = set()  
 with open(OUTPUT_FILES["sa-east-1"], "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["InstanceType", "vCPUs"])
@@ -41,7 +39,6 @@ with open(OUTPUT_FILES["sa-east-1"], "w", newline="") as f:
 
 print(f"✅ CSV sa-east-1 salvo: {OUTPUT_FILES['sa-east-1']} ({len(sa_types)} instâncias)")
 
-# Segundo: us-east-1, removendo instâncias já presentes em sa-east-1
 instances_us = get_instances("us-east-1")
 with open(OUTPUT_FILES["us-east-1"], "w", newline="") as f:
     writer = csv.writer(f)
@@ -50,7 +47,7 @@ with open(OUTPUT_FILES["us-east-1"], "w", newline="") as f:
     for inst in instances_us:
         instance_type = inst.get("InstanceType", "")
         if instance_type in sa_types:
-            continue  # pula instâncias que já existem em sa-east-1
+            continue  
         arch_val = inst.get("Architecture", [])
         arch_val = arch_val[0] if isinstance(arch_val, list) and arch_val else ""
         if arch_val == 'x86_64':

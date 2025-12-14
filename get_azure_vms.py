@@ -10,11 +10,7 @@ from azure.identity import DefaultAzureCredential
 from azure.mgmt.compute import ComputeManagementClient
 from azure.mgmt.resource import SubscriptionClient
 
-# ==============================================================================
-# FUNÇÃO PARA BUSCAR O PREÇO SPOT (Inalterada)
-# ==============================================================================
 def get_azure_spot_linux_price(arm_region_name: str, arm_sku_name: str) -> Optional[Tuple[float, str]]:
-    """Busca o preço Spot Linux de uma SKU. Retorna (preço, skuName) ou None."""
     base_url = "https://prices.azure.com/api/retail/prices"
     filter_string = f"armRegionName eq '{arm_region_name}' and armSkuName eq '{arm_sku_name}'"
     params = {'$filter': filter_string}
@@ -29,11 +25,7 @@ def get_azure_spot_linux_price(arm_region_name: str, arm_sku_name: str) -> Optio
     except requests.exceptions.RequestException:
         return None
 
-# ==============================================================================
-# FUNÇÃO AUXILIAR PARA PROCESSAR AS CAPACIDADES (Inalterada)
-# ==============================================================================
 def parse_sku_capabilities(capabilities: list) -> Dict[str, Any]:
-    """Extrai vCPUs, Memória e Arquitetura da lista de capacidades de uma SKU."""
     specs = {'vCPUs': 'N/A', 'MemoryGB': 'N/A', 'CpuArchitecture': 'N/A'}
     for cap in capabilities:
         if cap.name == 'vCPUs': specs['vCPUs'] = cap.value
@@ -41,41 +33,28 @@ def parse_sku_capabilities(capabilities: list) -> Dict[str, Any]:
         elif cap.name == 'CpuArchitectureType': specs['CpuArchitecture'] = cap.value
     return specs
 
-# ==============================================================================
-# FUNÇÃO DE TRABALHO (Modificada para converter GB para MB)
-# ==============================================================================
 def fetch_price_for_sku(sku, location: str):
-    """
-    Função alvo para cada thread. Busca dados da SKU e seu preço, 
-    convertendo a memória para MB.
-    """
     vm_size = sku.name
     specs = parse_sku_capabilities(sku.capabilities)
     price_info = get_azure_spot_linux_price(location, vm_size)
     spot_price, spot_sku_name = price_info if price_info else ('N/A', 'N/A')
     
-    # --- ALTERAÇÃO AQUI: Converte memória de GB para MB ---
     memory_mb = 'N/A'
     try:
-        # Converte o valor de GB (que é uma string) para float, multiplica e converte para inteiro
         memory_gb_float = float(specs['MemoryGB'])
         memory_mb = int(memory_gb_float * 1024)
     except (ValueError, TypeError):
-        # Se o valor não for um número, mantém 'N/A'
         memory_mb = 'N/A'
         
     return (
         vm_size,
         specs['vCPUs'],
-        memory_mb, # <-- Retorna o valor em MB
+        memory_mb,
         specs['CpuArchitecture'],
         spot_price,
         spot_sku_name
     )
 
-# ==============================================================================
-# FUNÇÃO PRINCIPAL (Modificada para novo cabeçalho do CSV)
-# ==============================================================================
 def list_large_vm_sizes_for_region(location: str, output_file: Optional[str] = None):
     VCPU_THRESHOLD = 2
     print(f"Buscando todos os tamanhos de VM com até {VCPU_THRESHOLD} vCPUs em '{location}'...", file=sys.stderr)

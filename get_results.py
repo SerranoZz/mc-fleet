@@ -3,7 +3,6 @@ import json
 import pandas as pd
 import os
 
-# Lista de arquivos de resultados (cada um é uma rodada de testes)
 arquivos = glob.glob("./results/*.json")
 
 rows = []
@@ -16,7 +15,6 @@ for run_id, arq in enumerate(arquivos, start=1):
         test_name = test["test_name"]
         provisioning_time = test["provisioning_time_seconds"]
 
-        # calcular preço médio ponderado e TOTAL DE INSTÂNCIAS do teste inteiro
         total_vms_test = 0
         total_price_test = 0
         for fleet in test["fleets"]:
@@ -48,11 +46,9 @@ for run_id, arq in enumerate(arquivos, start=1):
                     "price": price,
                     "total_price": total_price,
                     "avg_price_test": avg_price_test,
-                    # --- MODIFICAÇÃO 1: Adiciona o total de instâncias alocadas no teste ---
                     "allocated_instances": total_vms_test
                 })
 
-# Criar DataFrame
 df = pd.DataFrame(rows)
 
 n_values = [10, 100, 200, 250]
@@ -60,7 +56,6 @@ n_values = [10, 100, 200, 250]
 for test_name, group in df.groupby("test_name"):
     safe_name = test_name.replace(" ", "_").replace("/", "-")
 
-    # calcular média das execuções
     avg_row = {
         "run_id": "mean",
         "test_name": test_name,
@@ -72,11 +67,9 @@ for test_name, group in df.groupby("test_name"):
         "price": "",
         "total_price": "",
         "avg_price_test": group["avg_price_test"].mean(),
-        # --- MODIFICAÇÃO 2: Adiciona a MÉDIA do total de instâncias alocadas ---
         "allocated_instances": int(group["allocated_instances"].mean())
     }
 
-    # adicionar linha de média
     group_with_mean = pd.concat([group, pd.DataFrame([avg_row])], ignore_index=True)
 
     n_value = 0
@@ -93,7 +86,6 @@ for test_name, group in df.groupby("test_name"):
     elif 'N600' in safe_name:
         n_value = 600
     
-    # Garante que o diretório de destino exista
     output_dir = f"./csv_results/selection_results/N{n_value}/"
     os.makedirs(output_dir, exist_ok=True)
     group_with_mean.to_csv(f"{output_dir}{safe_name}.csv", index=False)

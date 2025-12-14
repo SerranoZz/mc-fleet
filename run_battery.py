@@ -9,11 +9,6 @@ import concurrent.futures
 import test_runner 
 
 def find_and_group_tests(all_enabled_tests):
-    """
-    Agrupa testes em pares paralelizáveis, single-cloud sequenciais e multi-cloud sequenciais.
-    Um par é formado por dois testes single-cloud com provedores diferentes, mas
-    mesmo número de nós, mesma localização e mesma estratégia.
-    """
     single_cloud_tests = [tc for tc in all_enabled_tests if tc.get('type') == 'single_cloud']
     multi_cloud_tests = [tc for tc in all_enabled_tests if tc.get('type') == 'multi_cloud']
 
@@ -27,22 +22,18 @@ def find_and_group_tests(all_enabled_tests):
         test_a = unmatched_pool.pop(0)
         partner_found = False
         
-        # Procura por um parceiro adequado no restante da lista
         for i, test_b in enumerate(unmatched_pool):
-            # Valida que cada teste tem a chave 'providers' e que ela não está vazia
             if not test_a.get('providers') or not test_b.get('providers'):
                 continue
             
-            # Critérios para formar um par:
             if (test_a['providers'][0] != test_b['providers'][0] and
                 test_a.get('nodes') == test_b.get('nodes') and
                 test_a.get('location') == test_b.get('location') and
                 test_a.get('strategy') == test_b.get('strategy')):
                 
-                # Parceiro encontrado, cria o par
                 parallel_pairs.append([test_a, unmatched_pool.pop(i)])
                 partner_found = True
-                break  # Sai do loop interno e pega o próximo item do pool
+                break  
         
         if not partner_found:
             unmatched_singles.append(test_a)
@@ -50,9 +41,6 @@ def find_and_group_tests(all_enabled_tests):
     return parallel_pairs, unmatched_singles, multi_cloud_tests
 
 def main(config_path):
-    """
-    Orquestra a bateria de testes com lógica de execução híbrida.
-    """
     try:
         with open(config_path, 'r') as f:
             test_config = yaml.safe_load(f)
@@ -66,7 +54,6 @@ def main(config_path):
     all_results = []
     all_enabled_tests = [tc for tc in test_config.get('test_suite', []) if tc.get('enabled', False)]
     
-    # 1. Agrupa os testes de acordo com a nova lógica
     parallel_pairs, sequential_singles, sequential_multis = find_and_group_tests(all_enabled_tests)
 
     total_tests_to_run = (len(parallel_pairs) * 2) + len(sequential_singles) + len(sequential_multis)
@@ -78,7 +65,6 @@ def main(config_path):
     
     tests_processed_count = 0
 
-    # 2. Executa os pares em paralelo
     for pair in parallel_pairs:
         if tests_processed_count > 0:
             logging.info("Aguardando 3 minutos (180s) antes do próximo lote...")
@@ -105,7 +91,6 @@ def main(config_path):
         
         logging.info("--- LOTE PARALELO CONCLUÍDO ---")
 
-    # 3. Executa os testes sequenciais restantes
     all_sequential_tests = sequential_singles + sequential_multis
     for test_case in all_sequential_tests:
         if tests_processed_count > 0:
@@ -124,7 +109,6 @@ def main(config_path):
         finally:
             tests_processed_count += 1
 
-    # 4. Salva os resultados
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_filename = f'./results/test_battery_results_{timestamp}.json'
     
@@ -148,7 +132,6 @@ if __name__ == "__main__":
         ]
     )
     
-    # Reduz o ruído dos logs dos SDKs
     logging.getLogger("azure").setLevel(logging.WARNING)
     logging.getLogger("msrest").setLevel(logging.WARNING)
     logging.getLogger("azure.core.pipeline").setLevel(logging.WARNING)

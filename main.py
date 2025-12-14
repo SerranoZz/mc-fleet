@@ -1,7 +1,7 @@
 import argparse
 import logging
 import yaml
-import sys  # Adicionado para usar sys.exit em caso de erro
+import sys  
 
 from app.services.fleet_service import FleetService
 from app.services.catalog_service import CatalogService
@@ -46,7 +46,7 @@ if __name__ == "__main__":
                         datefmt='%Y-%m-%d %H:%M:%S')
     
     logging.getLogger("azure").setLevel(logging.WARNING)
-    logging.getLogger("msrest").setLevel(logging.WARNING)        # para requests do SDK
+    logging.getLogger("msrest").setLevel(logging.WARNING)      
     logging.getLogger("azure.core.pipeline").setLevel(logging.WARNING)
     logging.getLogger("azure.identity").setLevel(logging.WARNING)
 

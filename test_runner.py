@@ -10,10 +10,6 @@ from app.provider_factory.factory import CloudProviderFactory
 from app.clients.pricing_client import PricingClient
 
 def run_single_test(test_params: dict):
-    """
-    Executa um único cenário de teste de provisionamento e retorna um dicionário estruturado com os resultados.
-    """
-    # Extrai parâmetros do teste
     providers_to_run = test_params.get('providers')
     location = test_params.get('location')
     num_vcpus = test_params.get('vcpus')
@@ -21,7 +17,6 @@ def run_single_test(test_params: dict):
     allocation_strategy = test_params.get('strategy')
     test_type = test_params.get('type')
 
-    # Carrega a configuração do catálogo de VMs (necessário para cada execução)
     try:
         with open('./config/vm_catalog.yaml', 'r') as f:
             catalog_config = yaml.safe_load(f)
@@ -56,10 +51,8 @@ def run_single_test(test_params: dict):
 
         serializable_price_list = []
         if instance_options:
-            # Checa se é uma lista de listas (caso multi-cloud com agrupamento)
             if isinstance(instance_options[0], list):
                 serializable_price_list = [[vm.to_dict() for vm in group] for group in instance_options]
-            # Caso de lista simples (single-cloud)
             else:
                 serializable_price_list = [vm.to_dict() for vm in instance_options]
         
@@ -96,12 +89,11 @@ def run_single_test(test_params: dict):
 
     processed_fleets = []
     for fleet_id, vms in final_fleets.items():
-        # Agrupa as VMs por tipo e AZ para sumarização
         summary_map = defaultdict(lambda: {"count": 0, "price_per_instance": 0.0, "provider": ""})
         for vm in vms:
             key = (vm.instance_type, vm.region_az)
             summary_map[key]["count"] += 1
-            summary_map[key]["price_per_instance"] = vm.price # Assume que o preço é o mesmo para o mesmo tipo/az
+            summary_map[key]["price_per_instance"] = vm.price
             summary_map[key]["provider"] = vm.provider
 
         summary_list = [
@@ -121,7 +113,6 @@ def run_single_test(test_params: dict):
             "summary": summary_list,
         })
     
-    # Monta o objeto de resultado final para este teste
     result_data = {
         "test_name": test_params.get('name'),
         "parameters": test_params,

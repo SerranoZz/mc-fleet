@@ -3,35 +3,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 import glob
 import os
-from adjustText import adjust_text # <--- MUDANÇA: Importar a nova biblioteca
-# ==============================================================================
-# LOGIC AND DATA PROCESSING FUNCTIONS
-# ==============================================================================
+from adjustText import adjust_text 
+
 def get_instance_distribution(df):
-    """
-    Calcula a média de instâncias alocadas por provedor (AWS/Azure) em todas as rodadas (runs),
-    usando a coluna 'quantity' para a contagem correta.
-    Retorna um dicionário com a contagem média arredondada. Ex: {'AWS': 150, 'Azure': 250}
-    """
-    # 1. Filtra apenas as rodadas de execução, ignorando a linha de média
+
     df_runs = df[df['run_id'] != 'mean'].copy()
     
-    # 2. Encontra os identificadores únicos de cada rodada
     run_ids = df_runs['run_id'].unique()
     
-    # 3. Armazena a contagem de instâncias por provedor para cada rodada
     distributions_per_run = []
     for run_id in run_ids:
         df_da_rodada = df_runs[df_runs['run_id'] == run_id]
         
-        # --- MUDANÇA CRÍTICA AQUI ---
-        # Usa a coluna 'quantity' em vez de 'allocated_instances'
         aws_instances = df_da_rodada[df_da_rodada['fleet_name'].str.contains('aws', case=False)]['quantity'].sum()
         azure_instances = df_da_rodada[df_da_rodada['fleet_name'].str.contains('azure', case=False)]['quantity'].sum()
         
         distributions_per_run.append({'AWS': aws_instances, 'Azure': azure_instances})
 
-    # 4. Calcula a média das contagens de todas as rodadas
     if not distributions_per_run:
         return {'AWS': 0, 'Azure': 0}
 
@@ -43,7 +31,6 @@ def get_instance_distribution(df):
         'Azure': int(round(avg_azure))
     }
 
-    # 5. Ajuste final para garantir que a soma bate com o total da linha 'mean'
     total_mean_instances = int(df[df['run_id'] == 'mean']['allocated_instances'].iloc[0])
     current_total = distribution['AWS'] + distribution['Azure']
     

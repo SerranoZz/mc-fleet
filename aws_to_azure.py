@@ -105,23 +105,17 @@ def find_best_azure_match(aws_instance: Dict[str, Any], available_azure_vms: Lis
     candidates.sort(key=lambda az_vm: (az_vm['memory'] - aws_memory, 0 if az_vm['family'] == aws_family else 1))
     return candidates[0]
 
-# ==============================================================================
-# Lógica Principal (Modificada para aceitar o arquivo de exclusão)
-# ==============================================================================
 def main(aws_region_to_process: str, exclusion_file: Optional[str]):
     azure_vms_full_catalog = load_azure_vms_from_csv(AZURE_CSV_FILE)
 
-    # --- NOVA LÓGICA DE EXCLUSÃO ---
     if exclusion_file:
         print(f"🔵 Aplicando exclusão com base no arquivo: {exclusion_file}", file=sys.stderr)
         try:
             with open(exclusion_file, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
-                # Cria um set para busca rápida das SKUs já usadas
                 used_azure_skus = {row['Azure_Equivalent_Type'] for row in reader if row.get('Azure_Equivalent_Type') and row['Azure_Equivalent_Type'] != 'N/A'}
             
             initial_count = len(azure_vms_full_catalog)
-            # Filtra o catálogo, mantendo apenas as VMs que NÃO foram usadas
             azure_vms = [vm for vm in azure_vms_full_catalog if vm['type'] not in used_azure_skus]
             final_count = len(azure_vms)
             
@@ -131,10 +125,8 @@ def main(aws_region_to_process: str, exclusion_file: Optional[str]):
             print(f"ERRO: Arquivo de exclusão não encontrado: '{exclusion_file}'", file=sys.stderr)
             sys.exit(1)
     else:
-        # Se nenhum arquivo de exclusão for fornecido, usa o catálogo completo
         azure_vms = azure_vms_full_catalog
 
-    # O resto do script continua a partir daqui usando a lista 'azure_vms' (completa ou filtrada)
     with open(YAML_FILE, "r") as f:
         config_data = yaml.safe_load(f)
 
@@ -182,7 +174,6 @@ def main(aws_region_to_process: str, exclusion_file: Optional[str]):
 
     matches.sort(key=lambda x: (x["AWS_vCPUs"], x["AWS_Memory_MB"]))
 
-    # Adiciona um sufixo ao nome do arquivo se a exclusão foi aplicada
     file_suffix = "_exclusive" if exclusion_file else ""
     csv_file = os.path.join(OUTPUT_DIR, f"aws_to_azure_{aws_region_to_process}_mapping{file_suffix}.csv")
     
