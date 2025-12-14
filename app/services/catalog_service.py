@@ -36,20 +36,17 @@ class CatalogService:
     def build_catalog_in_parallel(self, catalog_config, vcpus, location, group_by_price, limit):
         all_priced_vms = []
         
-        # Usamos ThreadPoolExecutor para gerenciar as threads de forma segura
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            # Submetemos uma tarefa para cada provedor
             future_to_provider = {
                 executor.submit(self._fetch_provider_prices, provider_name, provider_config, vcpus, location, limit): provider_name
                 for provider_name, provider_config in catalog_config['providers'].items()
                 if provider_name in self.providers
             }
 
-            # Coletamos os resultados à medida que as threads terminam
             for future in concurrent.futures.as_completed(future_to_provider):
                 provider_name = future_to_provider[future]
                 try:
-                    result = future.result() # Pega o resultado retornado pela função _fetch_provider_prices
+                    result = future.result() 
                     if result:
                         all_priced_vms.extend(result)
                 except Exception as exc:

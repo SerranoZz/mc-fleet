@@ -1,5 +1,4 @@
 import argparse
-import csv
 import logging
 import yaml
 import sys  # Adicionado para usar sys.exit em caso de erro
@@ -30,8 +29,13 @@ def main(args, catalog_config):
         for name in providers_to_run
     }
 
-    
+    pricing_client = PricingClient()
+    catalog_service = CatalogService()
     fleet_service = FleetService(available_providers)
+
+    instance_options = catalog_service.build_catalog_in_parallel(catalog_config, num_vcpus, location, 99999)
+    fleet_service.provision_fleet_multi_cloud(instance_options, num_nodes, allocation_strategy)
+
     input("Aperte enter para deletar os fleets...")
     fleet_service.delete_fleet()
 
